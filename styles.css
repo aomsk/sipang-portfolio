@@ -24,7 +24,8 @@ body {
 
 header {
   width: 100%;
-  height: 80px;
+  height: 60px;
+  /* height: 80px; */
   /* background: #11101b; */
   background: #F5B041;
   display: flex;
@@ -77,6 +78,7 @@ header {
 .hero {
   width: 100vw;
   height: 100vh;
+  /* height: 80vh; */
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -86,7 +88,7 @@ header {
 }
 
 .header-info h1 {
-  font-size: 6rem;
+  font-size: 7rem;
   margin: 10px;
 }
 
@@ -115,8 +117,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 60px 0;
-  /* border: 2px solid red; */
+  /* margin: 60px 0; */
+  padding: 20px 0;
+  /* border: 2px solid blue; */
 }
 
 .v-line {
@@ -127,7 +130,9 @@ header {
 .status-items {
   width: 500px;
   margin: 0 10px;
+  padding: 20px 0;
   text-align: center;
+  /* border: 2px solid red; */
 }
 
 .status-items h3 {
@@ -141,18 +146,19 @@ header {
 
 .about-container {
   height: auto;
-  padding: 20px 0;
+  /* padding: 20px 0; */
+  /* border: 2px solid red; */
 }
 
 .about-items {
   height: auto;
   padding: 0 25rem;
-  margin: 5px 0;
-  /* border: 2px solid blue; */
+  margin: 20px 0;
 }
 
 .about-items h1 {
-  margin: 10px 0;
+  /* margin: 20px 0; */
+  padding-bottom: 20px;
   text-align: center
 }
 
@@ -226,19 +232,30 @@ header {
 }
 
 .skills-container {
-  height: 500px;
-  display: flex;
+  display: grid;
+  grid: auto auto / auto;
   justify-content: center;
-  border: 2px solid red;
+  padding: 30px 0;
+  text-align: center;
+  /* border: 2px solid red; */
+}
+
+.skills-container h1 {
+  padding: 20px 0;
 }
 
 .skills-items {
-  width: 750px;
-  border: 2px solid blue;
+  width: auto;
+  height: auto;
+  display: grid;
+  grid: auto auto / auto auto auto auto auto auto;
+  /* border: 2px solid blue; */
 }
 
-.skills-items h1 {
-  text-align: center;
+.skills-items svg {
+  padding: 5px;
+  /* width: 100px;
+  height: 100px; */
 }
 
 footer {
@@ -318,7 +335,7 @@ footer {
   .nav-bar {
     height: 0px;
     position: absolute;
-    top: 80px;
+    top: 60px;
     left: 0;
     right: 0;
     width: 100vw;
@@ -369,7 +386,7 @@ footer {
   }
 
   .status-container {
-    margin: 40px 0 10px;
+    /* margin: 40px 0 10px; */
   }
 
   .status-items h3 {
@@ -378,6 +395,13 @@ footer {
 
   .about-items {
     padding: 0 30px;
+  }
+
+  .skills-items {
+    display: block;
+    padding: 0 10px;
+    /* display: grid; */
+    /* grid: auto auto / auto auto auto auto auto auto; */
   }
 }
 
@@ -389,7 +413,12 @@ footer {
   }
 
   .status-container {
-    margin: 50px 0 10px;
+    /* margin: 50px 0 10px; */
+  }
+
+  .skills-items svg {
+    width: 80px;
+    height: 80px;
   }
 
   footer {
@@ -407,8 +436,12 @@ footer {
 }
 
 @media only screen and (max-width: 400px) {
+  .hero {
+    height: 600px;
+  }
+
   .header-info h1 {
-    padding: 20px 0;
+    /* padding: 20px 0; */
     font-size: 4.2rem;
   }
 }
