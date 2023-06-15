@@ -1,3 +1,3 @@
 # **Sipang's Portfolio😊**
 
-Using HTML, CSS and Javascript
+Create my portfolio with HTML, CSS and Javascript
