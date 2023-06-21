@@ -196,12 +196,12 @@ header {
 }
 
 .right h4 {
-  padding-top: 40px;
+  padding-top: 35px;
 }
 
 .right p {
   text-align: center;
-  font-size: calc(50% + 0.9vmin);
+  font-size: calc(53% + 0.9vmin);
   width: auto;
 }
 
@@ -453,7 +453,7 @@ footer {
   }
 
   .about-items {
-    padding: 0 30px;
+    padding: 0 25px;
   }
 
   .skills-items {
