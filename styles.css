@@ -171,7 +171,7 @@ header {
 }
 
 .about-items p {
-  font-size: calc(55% + 0.8vmin);
+  font-size: calc(65% + 0.8vmin);
   color: rgba(0, 0, 0, 0.6);
   text-align: justify;
 }
@@ -192,7 +192,7 @@ header {
 
 .left p {
   text-align: center;
-  font-size: calc(40% + 0.8vmin);
+  font-size: calc(53% + 0.9vmin);
 }
 
 .right h4 {
@@ -201,7 +201,7 @@ header {
 
 .right p {
   text-align: center;
-  font-size: calc(40% + 0.8vmin);
+  font-size: calc(50% + 0.9vmin);
   width: auto;
 }
 
