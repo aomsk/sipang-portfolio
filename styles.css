@@ -362,10 +362,79 @@ header {
   padding: 5px;
 }
 
+/* .project-contianer {
+  border: 2px solid red;
+} */
+
+.project-contianer h1 {
+  text-align: center;
+  padding: 30px 0 40px 0;
+}
+
+.project-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 50px;
+  /* border: 2px solid blue; */
+}
+
+.project-item {
+  display: flex;
+  height: auto;
+  width: 500px;
+  padding: 20px;
+  border: 2px solid #1b1b1b;
+  border-radius: 5px;
+}
+
+/* .project-content {
+  background-color: darkcyan;
+} */
+
+.project-content-text {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+  /* background-color: orchid; */
+}
+
+.project-content-text a {
+  /* position: absolute; */
+  padding: 3px 0 0 0;
+  /* left: 430px */
+}
+
+/* .project-content-icon {
+  margin-top: 10px;
+} */
+
+.project-content-icon {
+  display: flex;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  gap: 4px;
+  /* background-color: dodgerblue; */
+}
+
+.project-content-paragarph {
+  /* background-color: burlywood; */
+}
+
+.project-content span {
+  border: 2px solid #1b1b1b;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1rem;
+  font-family: monospace;
+}
+
 .container-backToTop {
   display: flex;
   justify-content: end;
   align-items: center;
+  margin: 20px 0 0 0;
   /* background-color: aquamarine; */
 }
 
@@ -377,6 +446,7 @@ header {
   padding: 7px;
   margin: 0 30px 20px 0;
   transition: all 0.3s ease-out;
+  color: #1b1b1b;
 }
 
 .btn-backToTop:hover {
@@ -573,6 +643,18 @@ footer {
     /* display: grid; */
     /* grid: auto auto / auto auto auto auto auto auto; */
   }
+
+  .project-items {
+    padding: 0 10px;
+  }
+
+  /* .project-content-text a {
+    left: 440px
+  } */
+
+  .project-content-text {
+    width: 450px;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -621,7 +703,15 @@ footer {
 
   section {
     /* padding: 60px 0 0 0; */
-    padding: 140px 0 0 0;
+    /* padding: 140px 0 0 0; */
+  }
+
+  /* .project-content-text a {
+    left: 340px
+  } */
+
+  .project-content-text {
+    width: 360px;
   }
 }
 
@@ -634,4 +724,18 @@ footer {
     /* padding: 20px 0; */
     font-size: 4.2rem;
   }
+
+  /* .project-content-text a {
+    left: 270px
+  } */
+
+  .project-content-text {
+    width: 300px;
+  }
+
+  /* .project-content-icon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+  } */
 }
