@@ -11,6 +11,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="shortcut icon" type="image/x-icon" href="./assets/s-logo.png" />
   <title>Sipang's Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--aos.js -->
 </head>
 
 <body>
@@ -47,7 +48,8 @@
       <h1>Hello I'm SIPANG</h1>
       <div class="header-detail">
         <div class="typing-box">
-          <h3 class="typing-demo">I'm a Web Developer.</h3>
+          <!-- <h3 class="typing-demo">I'm a Web Developer.</h3> -->
+          <p class="typing-text">I'm a <span id="element" class="typing-text"></span></p>
         </div>
         <!-- <h3>I want to be a Web Developer</h3> -->
         <a class="btn-resume" href="./assets/Developer Sipang K. Resume.pdf"
@@ -55,19 +57,19 @@
       </div>
       <div class="header-detail" style="padding-top: 25px;">
         <a class="icon-social" href="https://www.facebook.com/AOMJSK/" target="_blank">
-          <i class="fa-brands fa-facebook fa-xl fa-bounce" style="color: #3653e8;"></i>
+          <i class="fa-brands fa-facebook fa-xl" style="color: #3653e8;"></i>
         </a>
         <a class="icon-social" href="" target="_blank">
-          <i class="fa-brands fa-instagram fa-xl fa-bounce" style="color: #ea2768;"></i>
+          <i class="fa-brands fa-instagram fa-xl" style="color: #ea2768;"></i>
         </a>
         <a class="icon-social" href="http://github.com/aomsk" target="_blank">
-          <i class="fa-brands fa-github fa-xl fa-bounce" style="color: #000000;"></i>
+          <i class="fa-brands fa-github fa-xl" style="color: #000000;"></i>
         </a>
       </div>
     </div>
   </section>
   <div>
-    <div class="status-container">
+    <div class="status-container" data-aos="fade-up">
       <div class="status-items">
         <h3>New Graduate</h3>
         <p>No Experience</p>
@@ -80,7 +82,7 @@
       </div>
     </div>
   </div>
-  <section id="About">
+  <section id="About" data-aos="fade-up">
     <div class="about-container">
       <div class="about-items">
         <h1>About Me</h1>
@@ -94,11 +96,12 @@
           things.
         </p>
       </div>
-      <div class="about-items">
+      <div class="about-items" data-aos="fade-up">
         <h1 class="title">Education</h1>
         <div class="education-container">
-          <div class="education-items left">
+          <div class="education-items left" data-aos="fade-up">
             <h4>Pathumthani Municipality Secondary School</h4>
+            <p>Science - Math</p>
             <p>Complete 2019</p>
           </div>
           <div class="education-items">
@@ -109,7 +112,7 @@
               <i class="fa-solid fa-school fa-xl" style="color: #000000;"></i>
             </span>
           </div>
-          <div class="education-items right">
+          <div class="education-items right" data-aos="fade-up">
             <h4>King Mongkut's Institute of Technology Ladkrabang</h4>
             <p>Bachelor of Science - Information Technology (Software Engineer)</p>
             <p>Complete 2023</p>
@@ -119,11 +122,11 @@
     </div>
     </div>
   </section>
-  <section id="Skills">
+  <section id="Skills" data-aos="fade-up">
     <div class="skills-container">
       <h1>Skills</h1>
-      <h4>Frontend Development</h4>
-      <div class="skills-items">
+      <h4 data-aos="fade-up">Frontend Development</h4>
+      <div class="skills-items" data-aos="fade-up">
         <div class="box">
           <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 400 400" width="35" height="35">
             <style>
@@ -240,8 +243,8 @@
           <span>Vite</span>
         </div>
       </div>
-      <h4>Backend Development and Database</h4>
-      <div class="skills-items">
+      <h4 data-aos="fade-up">Backend Development and Database</h4>
+      <div class="skills-items" data-aos="fade-up">
         <div class="box">
           <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <title>Express</title>
@@ -283,8 +286,8 @@
           <span>MongoDB</span>
         </div>
       </div>
-      <h4>Design and Development Tools</h4>
-      <div class="skills-items">
+      <h4 data-aos="fade-up">Design and Development Tools</h4>
+      <div class="skills-items" data-aos="fade-up">
         <div class="box">
           <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <title>Figma</title>
@@ -350,6 +353,23 @@
     </div>
   </footer>
   <script type="text/javascript" src="index.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> <!-- typed.js -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!-- aos.js -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer.', 'Mobile Developer.'],
+      typeSpeed: 100,
+      backSpeed: 100,
+      smartBackspace: true, // this is a default
+      loop: true,
+      // backDelay: 500,
+      // startDelay: 1000,
+      // shuffle: true,
+      // cursorChar: '_',
+      // showCursor: false
+    });
+    AOS.init();
+  </script>
 </body>
 
 </html>
