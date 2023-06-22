@@ -335,6 +335,11 @@
   <!-- <section id="Projects">Projects</section>
 
   <section id="Contact">Contact</section> -->
+  <div class="container-backToTop">
+    <a class="btn-backToTop" href="#">
+      <i class="fa-solid fa-arrow-up fa-lg"></i>
+    </a>
+  </div>
   <footer>
     <div class="footer-container">
       <div class="footer-items">&copy;Copyright 2023</div>
@@ -368,7 +373,9 @@
       // cursorChar: '_',
       // showCursor: false
     });
-    AOS.init();
+    AOS.init({
+      easing: 'ease-out',
+    });
   </script>
 </body>
 
