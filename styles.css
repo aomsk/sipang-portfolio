@@ -102,21 +102,59 @@ header {
   height: auto;
 }
 
-.header-detail h3 {
+/* .header-detail h3 {
   font-size: 3rem;
   margin: 10px 0;
+} */
+
+.typing-box {
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  /* margin: 20px 0; */
+  margin-bottom: 20px;
+}
+
+.typing-demo {
+  width: 20ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 5em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
 
 .icon-social {
-
-  padding: 8px 5px;
+  padding: 0 5px;
 }
+
+/* .fa-facebook {
+  color: #1b1b1b;
+  transition: color .5s ease-out;
+}
+
+.fa-facebook:hover {
+  color: #3653e8;
+} */
 
 .btn-resume {
   text-decoration: none;
   font-size: calc(50% + 0.8vmin);
   font-weight: 700;
-  /* background-color: #11101b; */
   border: 2px solid #1b1b1b;
   color: #1b1b1b;
   padding: 8px 10px;
@@ -361,6 +399,10 @@ footer {
     font-size: 2.5rem;
   }
 
+  .typing-box {
+    justify-content: center;
+  }
+
   .about-items {
     padding: 0 2rem;
   }
@@ -386,6 +428,10 @@ footer {
 
   .header-detail h3 {
     font-size: 2.5rem;
+  }
+
+  .typing-box {
+    justify-content: center;
   }
 
   .about-items {
@@ -457,8 +503,12 @@ footer {
     font-size: 4.2rem;
   }
 
-  .header-detail h3 {
-    font-size: 1.5rem;
+  .typing-box h3 {
+    font-size: 2.2rem;
+  }
+
+  .typing-box {
+    justify-content: center;
   }
 
   .status-container {
@@ -498,6 +548,10 @@ footer {
 
   .status-container {
     /* margin: 50px 0 10px; */
+  }
+
+  .typing-box h3 {
+    font-size: 1.5rem;
   }
 
   .skills-items svg {
