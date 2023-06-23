@@ -430,6 +430,26 @@ header {
   font-family: monospace;
 }
 
+.project-content-text .fa-github:hover {
+  animation-name: shake;
+  animation-duration: .1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(-2px)
+  }
+
+  50% {
+    transform: translateX(0px)
+  }
+
+  100% {
+    transform: translateX(-2px)
+  }
+}
+
 .container-backToTop {
   display: flex;
   justify-content: end;
