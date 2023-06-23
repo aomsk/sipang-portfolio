@@ -30,7 +30,7 @@ body {
 section {
   /* padding: 60px 0 0 0; */
   /* padding: 140px 0 0 0; */
-  padding: 15% 0 0 0;
+  padding: 10% 0 0 0;
   /* background-color: aqua; */
 }
 
@@ -490,6 +490,8 @@ header {
 .contect-container {
   display: flex;
   justify-content: center;
+  /* background-color: red; */
+  /* margin-bottom: 30px; */
 }
 
 .contact-items {
@@ -508,6 +510,12 @@ header {
 
 .contact-item i {
   padding: 5px 5px;
+}
+
+.contact-btn {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 0 0;
 }
 
 .container-backToTop {
