@@ -6,5 +6,4 @@ Create my portfolio with HTML, CSS and Javascript
 
 - HTML
 - CSS
-- AOS.js
 - Typed.js
