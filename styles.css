@@ -30,8 +30,28 @@ body {
 section {
   /* padding: 60px 0 0 0; */
   /* padding: 140px 0 0 0; */
+  /* padding: 10% 0 0 0; */
+  /* background-color: aqua; */
+}
+
+section.about {
   padding: 10% 0 0 0;
   /* background-color: aqua; */
+}
+
+section.skills {
+  padding: 10% 0 0 0;
+  /* background-color: yellow; */
+}
+
+section.projects {
+  padding: 7% 0 0 0;
+  /* background-color: pink; */
+}
+
+section.contact {
+  padding: 10% 0 0 0;
+  /* background-color: cyan; */
 }
 
 header {
@@ -190,7 +210,7 @@ header {
   opacity: 0;
   /* filter: blur(5px); */
   /* transform: translateY(-30%); */
-  transform: translateY(30%);
+  transform: translateY(10%);
   transition: all 1s ease;
 }
 
@@ -248,7 +268,7 @@ header {
 .about-items {
   height: auto;
   padding: 0 24rem;
-  margin: 20px 0;
+  margin: 20px 0 0 0;
 }
 
 .about-items h1 {
@@ -334,9 +354,7 @@ header {
   display: grid;
   grid: auto auto / auto;
   justify-content: center;
-  padding: 30px 0;
-  /* text-align: center; */
-  /* border: 2px solid red; */
+  /* padding: 30px 0; */
 }
 
 .skills-container h1 {
@@ -399,7 +417,7 @@ header {
 
 .project-contianer h1 {
   text-align: center;
-  padding: 30px 0 40px 0;
+  padding: 0 0 30px 0;
 }
 
 .project-items {
@@ -484,7 +502,8 @@ header {
 
 #Contact h1 {
   text-align: center;
-  padding-bottom: 20px;
+  padding: 20px 0;
+  /* margin: 20px 0 0 0; */
 }
 
 .contect-container {
@@ -703,11 +722,6 @@ footer {
     font-size: 2.2rem;
   } */
 
-  section {
-    /* padding: 60px 0 0 0; */
-    /* padding: 70px 0 0 0; */
-  }
-
   .typing-box {
     justify-content: center;
   }
@@ -789,14 +803,25 @@ footer {
     display: block;
   }
 
-  section {
-    /* padding: 60px 0 0 0; */
-    /* padding: 140px 0 0 0; */
+  section.about {
+    padding: 15% 0 0 0;
+    /* background-color: aqua; */
   }
 
-  /* .project-content-text a {
-    left: 340px
-  } */
+  section.skills {
+    padding: 25% 0 0 0;
+    /* background-color: yellow; */
+  }
+
+  section.projects {
+    padding: 60% 0 0 0;
+    /* background-color: pink; */
+  }
+
+  section.contact {
+    padding: 30% 0 0 0;
+    /* background-color: cyan; */
+  }
 
   .project-content-text {
     width: 360px;
@@ -813,22 +838,28 @@ footer {
     font-size: 4.2rem;
   }
 
-  /* .project-content-text a {
-    left: 270px
-  } */
-
   .project-content-text {
     width: 300px;
   }
 
-  /* .project-content-icon {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3px;
-  } */
+  section.about {
+    padding: 35% 0 0 0;
+    /* background-color: aqua; */
+  }
 
+  section.skills {
+    padding: 43% 0 0 0;
+    /* background-color: yellow; */
+  }
 
-  /* section {
-    padding: 350px 0 0 0;
-  } */
+  section.projects {
+    padding: 65% 0 0 0;
+    /* background-color: pink; */
+  }
+
+  section.contact {
+    padding: 35% 0 0 0;
+    /* background-color: cyan; */
+  }
+
 }
