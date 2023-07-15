@@ -33,6 +33,7 @@ contact.onclick = function () {
 const observer = new IntersectionObserver((entries) => {
   console.log("observer: ", observer);
   entries.forEach((entry) => {
+    console.log("entry: ", entry);
     if (entry.isIntersecting) {
       // console.log("entry.isIntersecting: ", entry.isIntersecting);
       entry.target.classList.add("show");
